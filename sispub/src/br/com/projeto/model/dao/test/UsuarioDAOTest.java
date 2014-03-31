@@ -1,4 +1,4 @@
-package br.com.encosis.minicurso.model.dao.test;
+package br.com.projeto.model.dao.test;
 
 import java.util.Calendar;
 
@@ -7,9 +7,9 @@ import javax.persistence.EntityManager;
 import org.junit.Assert;
 import org.junit.Test;
 
-import br.com.encosis.minicurso.model.bean.Usuario;
-import br.com.encosis.minicurso.model.dao.JPAUtil;
-import br.com.encosis.minicurso.model.dao.UsuarioDAO;
+import br.com.projeto.model.bean.Usuario;
+import br.com.projeto.model.dao.JPAUtil;
+import br.com.projeto.model.dao.UsuarioDAO;
 
 public class UsuarioDAOTest {
 

@@ -1,4 +1,4 @@
-package br.com.encosis.minicurso.model.dao.test;
+package br.com.projeto.model.dao.test;
 
 import static org.junit.Assert.*;
 

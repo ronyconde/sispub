@@ -1,4 +1,4 @@
-package br.com.encosis.minicurso.model.dao;
+package br.com.projeto.model.dao;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

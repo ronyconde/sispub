@@ -1,10 +1,10 @@
-package br.com.encosis.minicurso.model.dao;
+package br.com.projeto.model.dao;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 
-import br.com.encosis.minicurso.model.bean.Organizacao;
+import br.com.projeto.model.bean.Organizacao;
 @SuppressWarnings("unchecked")
 public class OrganizacaoDAO {
 

@@ -1,41 +1,42 @@
-package br.com.encosis.minicurso.model.dao.test;
+package br.com.projeto.model.dao.test;
 
 import static org.junit.Assert.*;
 
 import java.util.Calendar;
+
 import javax.persistence.EntityManager;
 
 import junit.framework.Assert;
 
 import org.junit.Test;
-import br.com.encosis.minicurso.model.bean.Organizacao;
-import br.com.encosis.minicurso.model.dao.JPAUtil;
-import br.com.encosis.minicurso.model.dao.OrganizacaoDAO;
 
-public class OrganizacaoDAOTest {
+import br.com.projeto.model.bean.Categoria;
+import br.com.projeto.model.dao.CategoriaDAO;
+import br.com.projeto.model.dao.JPAUtil;
+
+public class CategoriaDAOTest {
 
 	@Test
 	public void testCadastrar() {
 		// Solicitacao de conexao ao SGBD
 		EntityManager entityManager = JPAUtil.getEntityManager();
-		OrganizacaoDAO dao = new OrganizacaoDAO(entityManager);
+		CategoriaDAO dao = new CategoriaDAO(entityManager);
 		// Inicio da transacao
 		entityManager.getTransaction().begin();
 		// Criacao de um novo produto
-		Organizacao organizacao = new Organizacao();
-		organizacao.setSigla("SERENG");
-		organizacao.setDescricao("Serviço de Engenharia");
-		organizacao.setAreaAtuacao("engenharia");
-		organizacao.setDataCadastro(Calendar.getInstance());
+		Categoria categoria = new Categoria();
+		categoria.setSigla("NPA");
+		categoria.setDescricao("Norma Padrão de Ação");
+		categoria.setDataCadastro(Calendar.getInstance());
 		
 		//Execucao do cadastro
-		dao.cadastrar(organizacao);
+		dao.cadastrar(categoria);
 		//Fechamento da conexao
 		entityManager.getTransaction().commit();
 		entityManager.close();
 		
 		//Realização do teste de cadastro
-		Assert.assertNotNull(organizacao.getId());
+		Assert.assertNotNull(categoria.getId());
 	}
 
 	// Continuacao...

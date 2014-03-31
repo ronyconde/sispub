@@ -1,4 +1,4 @@
-package br.com.encosis.minicurso.control.mb;
+package br.com.projeto.control.mb;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -8,9 +8,9 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.persistence.EntityManager;
 
-import br.com.encosis.minicurso.model.bean.Categoria;
-import br.com.encosis.minicurso.model.dao.JPAUtil;
-import br.com.encosis.minicurso.model.dao.CategoriaDAO;
+import br.com.projeto.model.bean.Categoria;
+import br.com.projeto.model.dao.CategoriaDAO;
+import br.com.projeto.model.dao.JPAUtil;
 
 @ViewScoped
 @ManagedBean

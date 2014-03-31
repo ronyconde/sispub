@@ -1,4 +1,4 @@
-package br.com.encosis.minicurso.model.bean;
+package br.com.projeto.model.bean;
 
 import java.util.Calendar;
 
